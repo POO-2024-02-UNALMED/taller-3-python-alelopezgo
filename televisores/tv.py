@@ -14,6 +14,8 @@ class TV:
     def getNumTV(cls) -> int:
         return cls._numTV 
     @classmethod
+    def setNumTV(cls, numTV: int) -> None:
+        cls._numTV = numTV
     def setMarca(self, marca: Marca) -> None:
         self._marca = marca
     def setCanal(self, canal: int) -> None:
@@ -26,8 +28,6 @@ class TV:
             self._volumen = volumen
     def setControl(self, control: Control) -> None:
         self._control = control
-    def setNumTV(cls, numTV: int) -> None:
-        cls._numTV = numTV
     def getMarca(self) -> Marca:
         return self._marca
     def getCanal(self) -> int:

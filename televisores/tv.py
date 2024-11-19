@@ -26,29 +26,29 @@ class TV:
             self._volumen = volumen
     def setControl(self, control: Control):
         self._control = control
-    def getMarca(self) -> Marca:
+    def getMarca(self):
         return self._marca
-    def getCanal(self) -> int:
+    def getCanal(self):
         return self._canal
-    def getPrecio(self) -> int:
+    def getPrecio(self):
         return self._precio
-    def getVolumen(self) -> int:
+    def getVolumen(self):
         return self._volumen
-    def getControl(self) -> Control:
+    def getControl(self):
         return self._control
-    def getEstado(self) -> bool:
+    def getEstado(self):
         return self._estado
-    def turnOn(self) -> None:
+    def turnOn(self):
         self._estado = True
-    def turnOff(self) -> None:
+    def turnOff(self):
         self._estado = False
-    def canalUp(self) -> None:
+    def canalUp(self):
         self.setCanal(self._canal + 1)
-    def canalDown(self) -> None:
+    def canalDown(self):
         self.setCanal(self._canal - 1)
-    def volumenUp(self) -> None:
+    def volumenUp(self):
         self.setVolumen(self._volumen + 1)
-    def volumenDown(self) -> None:
+    def volumenDown(self):
         self.setVolumen(self._volumen - 1)
 TV.setNumTV = classmethod(TV.setNumTV)
 TV.getNumTV = classmethod(TV.getNumTV)
